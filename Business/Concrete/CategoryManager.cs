@@ -24,6 +24,7 @@ namespace Business.Concrete
 
         public Category GetById(int categoryId)
         {
+            // Select * from Categories where CategoryId = 3 gibi veritabanını çalıştırır.
             return _categoryDal.Get(c => c.CategoryId == categoryId);
         }
     }
